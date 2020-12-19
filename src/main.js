@@ -5,8 +5,24 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 
+// 按需引入element组件
+import { Button, Select, Form, FormItem, Input, Checkbox, Message, Container, Header, Aside, Main } from 'element-ui'
+
 // 加载全局样式文件
 import './styles/index.less'
+
+// 全局注册element组件
+Vue.use(Button)
+Vue.use(Select)
+Vue.use(Form)
+Vue.use(FormItem)
+Vue.use(Input)
+Vue.use(Checkbox)
+Vue.use(Container)
+Vue.use(Header)
+Vue.use(Aside)
+Vue.use(Main)
+Vue.prototype.$message = Message
 
 Vue.config.productionTip = false
 
